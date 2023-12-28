@@ -1,4 +1,5 @@
-/*
+/* @preserve
+ *
  * jQuery Nivo Slider v3.3
  * https://github.com/fpvcode/nivo-slider-jquery
  *
