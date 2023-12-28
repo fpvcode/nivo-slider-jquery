@@ -353,13 +353,22 @@
 
             // Set current background before change
             if (!nudge) {
-                sliderImg.attr('src', src(vars.currentImage));
+                sliderImg.prop({
+                    src: src(vars.currentImage),
+                    alt: vars.currentImage.attr('alt')
+                });
             } else {
                 if (nudge === 'prev') {
-                    sliderImg.attr('src', src(vars.currentImage));
+                    sliderImg.prop({
+                        src: src(vars.currentImage),
+                        alt: vars.currentImage.attr('alt')
+                    });
                 }
                 if (nudge === 'next') {
-                    sliderImg.attr('src', src(vars.currentImage));
+                    sliderImg.prop({
+                        src: src(vars.currentImage),
+                        alt: vars.currentImage.attr('alt')
+                    });
                 }
             }
 
