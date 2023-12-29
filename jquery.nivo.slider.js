@@ -1,6 +1,6 @@
 /* @preserve
  *
- * jQuery Nivo Slider v3.3
+ * jQuery Nivo Slider v3.3.1
  * https://github.com/fpvcode/nivo-slider-jquery
  *
  * jQuery Nivo Slider v3.2
@@ -267,7 +267,7 @@
 
                 if (i === settings.slices - 1) {
                     slider.append(
-                        $('<div class="nivo-slice" name="' + i + '"><img src="' + src(vars.currentImage) + '" style="position:absolute; width:' + slider.width() + 'px; height:auto; display:block !important; top:0; left:-' + ((sliceWidth + (i * sliceWidth)) - sliceWidth) + 'px;" /></div>').css({
+                        $('<div class="nivo-slice" name="' + i + '"><img src="' + src(vars.currentImage) + '" style="position:absolute; width:' + slider.width() + 'px; height:auto; display:block !important; top:0; left:-' + ((sliceWidth + (i * sliceWidth)) - sliceWidth) + 'px;" alt="' + vars.currentImage.attr('alt') + '" /></div>').css({
                             left: (sliceWidth * i) + 'px',
                             width: (slider.width() - (sliceWidth * i)) + 'px',
                             height: sliceHeight + 'px',
@@ -277,7 +277,7 @@
                     );
                 } else {
                     slider.append(
-                        $('<div class="nivo-slice" name="' + i + '"><img src="' + src(vars.currentImage) + '" style="position:absolute; width:' + slider.width() + 'px; height:auto; display:block !important; top:0; left:-' + ((sliceWidth + (i * sliceWidth)) - sliceWidth) + 'px;" /></div>').css({
+                        $('<div class="nivo-slice" name="' + i + '"><img src="' + src(vars.currentImage) + '" style="position:absolute; width:' + slider.width() + 'px; height:auto; display:block !important; top:0; left:-' + ((sliceWidth + (i * sliceWidth)) - sliceWidth) + 'px;" alt="' + vars.currentImage.attr('alt') + '" /></div>').css({
                             left: (sliceWidth * i) + 'px',
                             width: sliceWidth + 'px',
                             height: sliceHeight + 'px',
@@ -306,7 +306,7 @@
                 for (var cols = 0; cols < settings.boxCols; cols++) {
                     if (cols === settings.boxCols - 1) {
                         slider.append(
-                            $('<div class="nivo-box" name="' + cols + '" rel="' + rows + '"><img src="' + src(vars.currentImage) + '" style="position:absolute; width:' + slider.width() + 'px; height:auto; display:block; top:-' + (boxHeight * rows) + 'px; left:-' + (boxWidth * cols) + 'px;" /></div>').css({
+                            $('<div class="nivo-box" name="' + cols + '" rel="' + rows + '"><img src="' + src(vars.currentImage) + '" style="position:absolute; width:' + slider.width() + 'px; height:auto; display:block; top:-' + (boxHeight * rows) + 'px; left:-' + (boxWidth * cols) + 'px;" alt="' + vars.currentImage.attr('alt') + '" /></div>').css({
                                 opacity: 0,
                                 left: (boxWidth * cols) + 'px',
                                 top: (boxHeight * rows) + 'px',
@@ -317,7 +317,7 @@
                         $('.nivo-box[name="' + cols + '"]', slider).height($('.nivo-box[name="' + cols + '"] img', slider).height() + 'px');
                     } else {
                         slider.append(
-                            $('<div class="nivo-box" name="' + cols + '" rel="' + rows + '"><img src="' + src(vars.currentImage) + '" style="position:absolute; width:' + slider.width() + 'px; height:auto; display:block; top:-' + (boxHeight * rows) + 'px; left:-' + (boxWidth * cols) + 'px;" /></div>').css({
+                            $('<div class="nivo-box" name="' + cols + '" rel="' + rows + '"><img src="' + src(vars.currentImage) + '" style="position:absolute; width:' + slider.width() + 'px; height:auto; display:block; top:-' + (boxHeight * rows) + 'px; left:-' + (boxWidth * cols) + 'px;" alt="' + vars.currentImage.attr('alt') + '" /></div>').css({
                                 opacity: 0,
                                 left: (boxWidth * cols) + 'px',
                                 top: (boxHeight * rows) + 'px',
